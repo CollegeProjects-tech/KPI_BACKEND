@@ -1,0 +1,6 @@
+@KPI__BACKEND_HostAddress = http://localhost:5195
+
+GET {{KPI__BACKEND_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
