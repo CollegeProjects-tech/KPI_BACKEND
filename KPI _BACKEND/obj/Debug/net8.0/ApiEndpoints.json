@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "KPI_BACKEND.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "Login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Models.tbl_Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KPI__BACKEND.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

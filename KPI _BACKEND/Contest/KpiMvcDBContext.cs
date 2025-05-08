@@ -9,6 +9,6 @@ namespace KPI_BACKEND.Contest
         public KpiMvcDBContext(DbContextOptions<KpiMvcDBContext> options) : base(options)
         {
         }
-        public DbSet<Class1> dTOTests { get; set; }
+        public DbSet<tbl_Login> dTOTests { get; set; }
     }
 }

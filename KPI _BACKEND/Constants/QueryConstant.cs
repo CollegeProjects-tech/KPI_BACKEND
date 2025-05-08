@@ -2,5 +2,7 @@
 {
     public class QueryConstant
     {
+        public static string Login = "Login";
+
     }
 }
