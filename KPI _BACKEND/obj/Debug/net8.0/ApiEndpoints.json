@@ -1,5 +1,108 @@
 [
   {
+    "ContainingType": "KPI_BACKEND.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/Login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Models.tbl_Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPI_BACKEND.Controllers.ResearchController",
+    "Method": "DownloadFile",
+    "RelativePath": "api/Research/Download/{teacherid}/{filename}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherid",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "filename",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPI_BACKEND.Controllers.ResearchController",
+    "Method": "Researches",
+    "RelativePath": "api/Research/Researches",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPI_BACKEND.Controllers.ResearchController",
+    "Method": "SaveResearch",
+    "RelativePath": "api/Research/SaveResearch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "teacher_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "selected_option",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "selected_sem",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "selected_year",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "details",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "file_path",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KPI__BACKEND.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
