@@ -21,7 +21,7 @@ namespace KPI_BACKEND.Repositries
         {
             try
             {
-                var query = "sp_Login";
+                var query = "sp_kpi";
 
 
                 var parameters = new DynamicParameters();

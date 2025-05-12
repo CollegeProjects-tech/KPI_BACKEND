@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ILogin, LoginRepository>();
+builder.Services.AddScoped<IResearch, ResearchRepository>();
 
 
 builder.Services.AddSingleton<DapperContext>();

@@ -5,6 +5,8 @@ using Models;
 
 namespace KPI_BACKEND.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class LoginController : Controller
     {
         private readonly ILogin loginRepository;
