@@ -14,6 +14,18 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ILogin, LoginRepository>();
 builder.Services.AddScoped<IResearch, ResearchRepository>();
+builder.Services.AddScoped<IInduInstiInteraction, InduInstiInteractionRepository>();
+builder.Services.AddScoped<IFdpSttpWorkshop, FdpSttpWorkshopRepository>();
+builder.Services.AddScoped<IStudentDevelopment, StudentDevelopmentRepository>();
+builder.Services.AddScoped<IAdmmission, AdmmissionRepository>();
+builder.Services.AddScoped<IAcaGustlecArranged, AcaGustlecArrangedRepository>();
+builder.Services.AddScoped<IInternalRevnuGen, InternalRevnuGenRepository>();
+builder.Services.AddScoped<IAdministrativeResp, AdministrativeRespRepository>();
+builder.Services.AddScoped<IExamSecResp, ExamSecRespRepository>();
+builder.Services.AddScoped<IPrinciple, PrincipleRepository>();
+builder.Services.AddScoped<IAdmin, AdminRepository>();
+
+
 
 
 builder.Services.AddSingleton<DapperContext>();
@@ -21,11 +33,11 @@ builder.Services.AddDbContext<KpiMvcDBContext>(options => options.UseSqlServer(b
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseHttpsRedirection();
 

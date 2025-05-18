@@ -17,7 +17,7 @@ namespace KPI_BACKEND.Repositries
             this.context = context;
         }
 
-        public async Task<tbl_Login> Login(tbl_Login login)
+        public async Task<tbl_Login> Login(int userid, string password)
         {
             try
             {
@@ -26,8 +26,8 @@ namespace KPI_BACKEND.Repositries
 
                 var parameters = new DynamicParameters();
                 parameters.Add("@Action", QueryConstant.Login);
-                parameters.Add("@username", login.username);
-                parameters.Add("@password", login.password);
+                parameters.Add("@userid", userid);
+                parameters.Add("@password",password);
 
 
 

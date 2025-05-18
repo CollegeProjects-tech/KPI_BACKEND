@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KPI_BACKEND.props" />
+</Project>

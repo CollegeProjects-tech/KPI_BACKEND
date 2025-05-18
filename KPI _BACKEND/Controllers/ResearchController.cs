@@ -98,7 +98,8 @@ namespace KPI_BACKEND.Controllers
                 if (System.IO.File.Exists(filePath))
                 {
                     var fileBytes = System.IO.File.ReadAllBytes(filePath);
-                    return File(fileBytes, "application/octet-stream", filename);
+                    var contentType = GetMimeType(filePath);
+                    return File(fileBytes, contentType, filename);
                 }
                 else
                 {
@@ -110,6 +111,17 @@ namespace KPI_BACKEND.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving file.");
             }
         }
+
+        private string GetMimeType(string filePath)
+        {
+            var provider = new Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider();
+            if (!provider.TryGetContentType(filePath, out var contentType))
+            {
+                contentType = "application/octet-stream"; // Fallback if unknown
+            }
+            return contentType;
+        }
+
 
 
 

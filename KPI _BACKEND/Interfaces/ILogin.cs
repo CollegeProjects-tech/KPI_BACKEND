@@ -4,6 +4,6 @@ namespace KPI_BACKEND.Interfaces
 {
     public interface ILogin
     {
-        Task<tbl_Login> Login(tbl_Login login);
+        Task<tbl_Login> Login(int userid, string password);
     }
 }
