@@ -18,8 +18,8 @@ namespace KPI_BACKEND.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        [Route("Login")]
-        public async Task<ActionResult> Login([FromBody] tbl_Login login)
+        [Route("Login/{userid}/{password}")]
+        public async Task<ActionResult> Login(int userid , string password)
         {
             try
             {
@@ -27,7 +27,7 @@ namespace KPI_BACKEND.Controllers
                 //objectExport.generatePdf();
 
 
-                var result = await loginRepository.Login(login);
+                var result = await loginRepository.Login(userid, password);
                 if (result == null)
                 {
                     return StatusCode(StatusCodes.Status404NotFound);
