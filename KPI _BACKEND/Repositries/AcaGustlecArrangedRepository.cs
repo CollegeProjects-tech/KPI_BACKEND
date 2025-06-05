@@ -50,6 +50,7 @@ namespace KPI_BACKEND.Repositries
                 parameters.Add("@details", acaGustlecArranged.details);
                 parameters.Add("@file_path", acaGustlecArranged.file_path);
                 parameters.Add("@date", acaGustlecArranged.date);
+                parameters.Add("@department", acaGustlecArranged.department);
 
 
 

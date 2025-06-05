@@ -17,6 +17,8 @@ namespace Models
         public string details { get; set; }
         public string? file_path { get; set; }
         public string? date { get; set; }
-        
+        public string? department { get; set; }
+
+
     }
 }

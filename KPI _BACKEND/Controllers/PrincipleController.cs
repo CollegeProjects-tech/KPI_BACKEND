@@ -69,5 +69,32 @@ namespace KPI_BACKEND.Controllers
 
         }
 
+        [AllowAnonymous]
+        [HttpGet]
+        [Route("Dashboard")]
+        public async Task<ActionResult> Dashboard()
+        {
+            try
+            {
+                //ExportQRs objectExport = new ExportQRs();
+                //objectExport.generatePdf();
+
+
+                var result = await principleRepository.Dashboard();
+                if (result == null)
+                {
+                    return StatusCode(StatusCodes.Status404NotFound);
+                    //return NotFound();
+                }
+                return Ok(result);
+                //return StatusCode(StatusCodes.Status200OK, result);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+
+        }
+
     }
 }

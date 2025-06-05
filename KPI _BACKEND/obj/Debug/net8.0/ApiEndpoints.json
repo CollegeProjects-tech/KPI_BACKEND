@@ -79,6 +79,11 @@
         "IsRequired": false
       },
       {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -192,6 +197,11 @@
         "IsRequired": false
       },
       {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -275,6 +285,11 @@
       },
       {
         "Name": "date",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -366,6 +381,11 @@
         "IsRequired": false
       },
       {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -449,6 +469,11 @@
       },
       {
         "Name": "date",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -540,6 +565,11 @@
         "IsRequired": false
       },
       {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -627,6 +657,11 @@
         "IsRequired": false
       },
       {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -653,6 +688,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPI_BACKEND.Controllers.PrincipleController",
+    "Method": "Dashboard",
+    "RelativePath": "api/Principle/Dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -767,6 +812,11 @@
         "IsRequired": false
       },
       {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -840,6 +890,11 @@
       },
       {
         "Name": "date",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
         "Type": "System.String",
         "IsRequired": false
       },

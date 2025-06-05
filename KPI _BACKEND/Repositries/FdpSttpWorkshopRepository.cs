@@ -50,6 +50,8 @@ namespace KPI_BACKEND.Repositries
                 parameters.Add("@details", fdpSttpWorkshop.details);
                 parameters.Add("@file_path", fdpSttpWorkshop.file_path);
                 parameters.Add("@date", fdpSttpWorkshop.date);
+                parameters.Add("@department", fdpSttpWorkshop.department);
+
 
 
 

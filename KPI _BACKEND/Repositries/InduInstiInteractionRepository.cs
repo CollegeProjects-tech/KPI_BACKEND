@@ -50,6 +50,7 @@ namespace KPI_BACKEND.Repositries
                 parameters.Add("@details", induinstiinteraction.details);
                 parameters.Add("@file_path", induinstiinteraction.file_path);
                 parameters.Add("@date", induinstiinteraction.date);
+                parameters.Add("@department", induinstiinteraction.department);
 
 
 

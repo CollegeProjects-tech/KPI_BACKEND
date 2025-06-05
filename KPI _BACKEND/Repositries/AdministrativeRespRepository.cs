@@ -50,6 +50,7 @@ namespace KPI_BACKEND.Repositries
                 parameters.Add("@details", administrativeResp.details);
                 parameters.Add("@file_path", administrativeResp.file_path);
                 parameters.Add("@date", administrativeResp.date);
+                parameters.Add("@department", administrativeResp.department);
 
 
 
