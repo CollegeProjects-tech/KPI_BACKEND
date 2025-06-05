@@ -5,16 +5,16 @@
         public static string Login = "Login";
 
         public static string InsertResearch = "InsertResearch"; 
-        public static string Researches = "select * from tbl_Researches";
+        public static string Researches = "select * from tbl_Researches order by date desc;";
 
         public static string InsertInduInstiInteraction = "InsertInduInstiInteraction";
         public static string InduInstiInteraction = "select * from tbl_InduInstiInteraction";
 
         public static string InsertFdpSttpWorkshop = "InsertFdpSttpWorkshop";
-        public static string FdpSttpWorkshop = "select * from tbl_FdpSttpWorkshop";
+        public static string FdpSttpWorkshop = "select * from tbl_FdpSttpWorkshop"; 
 
         public static string InsertStudentDevelopment = "InsertStudentDevelopment";
-        public static string StudentDevelopment = "select * from tbl_StudentDevelopment";
+        public static string StudentDevelopment = "select * from tbl_StudentDevelopment"; 
 
         public static string InsertAdmmission = "InsertAdmmission";
         public static string Admmission = "select * from tbl_Admmission";
@@ -33,6 +33,7 @@
 
         public static string ViewDetails = "ViewDetails";
         public static string DipartmentsWiseTeachers = "DipartmentsWiseTeachers";
+        public static string Dashboard = "Dashboard"; 
 
         public static string InsertUser = "InsertUser";
         public static string Users = "select * from tbl_Users";

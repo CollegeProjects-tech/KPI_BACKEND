@@ -50,6 +50,7 @@ namespace KPI_BACKEND.Repositries
                 parameters.Add("@details", internalRevnuGen.details);
                 parameters.Add("@file_path", internalRevnuGen.file_path);
                 parameters.Add("@date", internalRevnuGen.date);
+                parameters.Add("@department", internalRevnuGen.department);
 
 
 

@@ -67,5 +67,29 @@ namespace KPI_BACKEND.Repositries
                 throw ex;
             }
         }
+
+        public async Task<IEnumerable<Dashboard>> Dashboard()
+        {
+            try
+            {
+                var query = "sp_kpi";
+
+
+                var parameters = new DynamicParameters();
+                parameters.Add("@Action", QueryConstant.Dashboard);
+
+
+
+                using (var connection = context.CreateConnection())
+                {
+                    var result = await connection.QueryAsync<Dashboard>(query, parameters, commandType: CommandType.StoredProcedure);
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
